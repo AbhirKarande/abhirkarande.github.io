@@ -1,40 +1,228 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+
+    <meta name=viewport content=“width=800”>
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <style type="text/css">
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f09228;
+            text-decoration: none;
+        }
+
+        body,
+        td,
+        th,
+        tr,
+        p,
+        a {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px
+        }
+
+        strong {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        heading {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        papertitle {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        name {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 32px;
+        }
+
+        .one {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+
+        .two {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        .fade {
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        span.highlight {
+            background-color: #ffffd0;
+        }
+    </style>
+    <link rel="icon" type="image/jpg" href="img/headshot.jpg">
     <title>Abhir Karande</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Abhir Karande</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <p>Your background in software engineering/machine learning/digital signal processing/robotics/etc.</p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-name/">https://www.linkedin.com/in/your-name/</a></p>
-      </section>
-    </main>
-  </body>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+
+</head>
+<body>
+<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="67%" valign="middle">
+                        <p align="center">
+                            <name>Abhir Karande</name>
+                        </p>
+                        <p>
+                            Hello there! I'm Abhir, a Bachelors of Science Student in <a href="https://engineering.virginia.edu/departments/computer-science"> Computer Science </a>.
+                            at <a href="https://engineering.virginia.edu/"> the University of Virignia</a>. 
+                        </p>
+                        <p>
+                            Find me here:
+                        </p>
+                        
+                        <p align=center>
+                            <a href="https://github.com/AbhirKarande">GitHub</a>
+                            &nbsp/&nbsp
+                            <a href="https://www.youtube.com/channel/UC_K6-FVZRSYGAR9qjfZSayw">YouTube</a>
+                            &nbsp/&nbsp
+                            <a href="https://www.linkedin.com/in/abhirkarande/">LinkedIn</a>
+                            &nbsp/&nbsp
+                            <a href="https://stackoverflow.com/users/edit/9655893">Stack Overflow</a>
+                            &nbsp/&nbsp
+                            <a href="ak9vqe@virginia.edu">Email</a>
+                        </p>
+                    </td>
+                    <td width="33%">
+                        <a href="img/headshot.jpg">
+                            <img src="img/headshot.jpg" width="250px"></a>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Work, Research & Publications</heading>
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/esm.png' width="160"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <h3 href="https://djl11.github.io/ESM/">
+                            <papertitle>FloodWatch</papertitle>
+                        </h3>
+                        <br>
+                        <strong>Developer</strong>,
+                        <strong>Research Assistant</strong>
+                        
+                        <a href="https://floodwatch-home.netlify.app">about</a>
+                        <p></p>
+                        <p>FloodWatch is a smart city project centered around the development of cyber physical system infrastructure for disaster intelligence and forecasting. The current location of interest for this project is Vietnam</p>
+                    </td>
+                </tr>
+
+                
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+</body>
 </html>
