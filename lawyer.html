@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .hero {
+            background-image: url('lawyer.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2em;
+        }
+        .content-item {
+            flex: 1;
+            margin: 1em;
+            padding: 1em;
+            background-color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Your Law Firm</h1>
+        </section>
+
+        <section class="content">
+            <div class="content-item">
+                <img src="glasses.jpg" alt="Glasses">
+                <h2>Our Expertise</h2>
+                <p>We specialize in various areas of law including 
+                   <a href="page2.html#about" target="_blank">About</a>, 
+                   <a href="page2.html#projects" target="_blank">Projects</a>, and 
+                   <a href="page2.html#services" target="_blank">Services</a>.
+                </p>
+            </div>
+            <div class="content-item">
+                <img src="notebook.jpg" alt="Notebook">
+                <h2>Our Approach</h2>
+                <p>We take a personalized approach to each case, ensuring the best possible outcome for our clients.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <img src="facebook.png" alt="Facebook">
+            <img src="instagram.png" alt="Instagram">
+            <img src="tiktok.png" alt="TikTok">
+            <img src="x.png" alt="X">
+            <img src="youtube.png" alt="YouTube">
+        </div>
+        <p>&copy; 2024 Your Law Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>
