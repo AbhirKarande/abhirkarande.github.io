@@ -3,61 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawyer Webpage</title>
+    <title>Biz Optima - Improve Your Business Today</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        header {
+        .navbar {
             background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .navbar a {
+            float: left;
             color: white;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 1em;
-        }
-        nav ul li a {
-            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2em;
-        }
         .hero {
-            background-image: url('lawyer.jpg');
+            background-image: url('backdrop.jpg'); /* Replace with your image */
             background-size: cover;
-            height: 400px;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             color: white;
         }
-        .content {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2em;
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
-        .content-item {
-            flex: 1;
-            margin: 1em;
-            padding: 1em;
-            background-color: white;
+        .features, .testimonials, .pricing {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .feature-item, .plan {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #FFD700;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 20px;
         }
         .social-icons img {
             width: 30px;
@@ -66,49 +78,74 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <nav class="navbar">
+        <a href="page2.html#about">About</a>
+        <a href="page2.html#projects">Projects</a>
+        <a href="page2.html#services">Services</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Don't Wait</h1>
+            <h2>Improve Your Business Today!</h2>
+            <p>Get your hands on Biz Optima</p>
+            <button class="cta-button">Sign Up for Free!</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Amazing Features</h2>
+        <div class="feature-item">
+            <h3>Feature 1</h3>
+            <p>Description of feature 1</p>
+        </div>
+        <div class="feature-item">
+            <h3>Feature 2</h3>
+            <p>Description of feature 2</p>
+        </div>
+        <div class="feature-item">
+            <h3>Feature 3</h3>
+            <p>Description of feature 3</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>"I couldn't have asked for more than this. Biz Optima is the next killer app."</blockquote>
+        - John Doe, CEO & Founder, Biz Optima
+    </section>
+
+    <section class="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>$29.99/month</p>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
             </ul>
-        </nav>
-    </header>
+            <button class="cta-button">Buy Now</button>
+        </div>
+        <!-- Add more pricing plans as needed -->
+    </section>
 
-    <main>
-        <section class="hero">
-            <h1>Your Law Firm</h1>
-        </section>
-
-        <section class="content">
-            <div class="content-item">
-                <img src="glasses.jpg" alt="Glasses">
-                <h2>Our Expertise</h2>
-                <p>We specialize in various areas of law including 
-                   <a href="page2.html#about" target="_blank">About</a>, 
-                   <a href="page2.html#projects" target="_blank">Projects</a>, and 
-                   <a href="page2.html#services" target="_blank">Services</a>.
-                </p>
-            </div>
-            <div class="content-item">
-                <img src="notebook.jpg" alt="Notebook">
-                <h2>Our Approach</h2>
-                <p>We take a personalized approach to each case, ensuring the best possible outcome for our clients.</p>
-            </div>
-        </section>
-    </main>
+    <section class="cta">
+        <h2>Try the Best App in the Market</h2>
+        <p>Tell more why your software is amazing and why users need to sign up</p>
+        <button class="cta-button">Try It For Free</button>
+    </section>
 
     <footer>
         <div class="social-icons">
             <img src="facebook.png" alt="Facebook">
             <img src="instagram.png" alt="Instagram">
             <img src="tiktok.png" alt="TikTok">
-            <img src="x.png" alt="X">
+            <img src="twitter.png" alt="Twitter">
             <img src="youtube.png" alt="YouTube">
         </div>
-        <p>&copy; 2024 Your Law Firm. All rights reserved.</p>
+        <p>Biz Optima</p>
+        <p>224 Grant Ave, Redondo Beach, CA, 90278 310.555.1212 Ext. 3 for Business Needs</p>
     </footer>
 </body>
 </html>
