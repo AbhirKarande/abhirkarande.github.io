@@ -9,86 +9,133 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            color: #333;
         }
         .navbar {
-            background-color: #333;
+            background-color: white;
             overflow: hidden;
-            padding: 10px 0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .menu {
+            font-weight: bold;
         }
         .navbar a {
-            float: left;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+            color: #333;
             text-decoration: none;
+            padding: 0 15px;
         }
         .hero {
-            background-image: url('img/lawyer.jpg'); /* Updated background image */
+            background-image: url('img/lawyer.jpg');
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
+            justify-content: flex-start;
+            padding-left: 10%;
         }
         .hero-content {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .features, .pricing {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .feature-container, .pricing-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .feature-item, .plan {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            background-color: #f8f8f8;
-            border-radius: 5px;
-            min-width: 200px;
-            max-width: 300px;
-        }
-        .testimonials {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        .pricing {
-            background-image: url('img/glasses.jpg'); /* Added background image */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Changed text color for better visibility */
-        }
-        .cta {
-            background-image: url('img/notebook.jpg'); /* Added background image */
-            background-size: cover;
-            background-position: center;
+            background-color: #1a3d5c;
+            padding: 40px;
             color: white;
-            padding: 50px 20px;
-            text-align: center;
+            max-width: 400px;
+        }
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero-content p {
+            color: #ffd700;
+            margin-bottom: 20px;
         }
         .cta-button {
-            background-color: #FFD700;
+            background-color: #ffd700;
             border: none;
-            color: black;
+            color: #1a3d5c;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            font-weight: bold;
             cursor: pointer;
         }
+        .features {
+            padding: 50px 10%;
+            background-color: white;
+        }
+        .feature-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .feature-item {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .testimonials {
+            background-color: #f8f8f8;
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .pricing {
+            background-image: url('img/glasses.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 10%;
+        }
+        .pricing::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 61, 92, 0.8);
+            z-index: 1;
+        }
+        .pricing-content {
+            position: relative;
+            z-index: 2;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .plan {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+        }
+        .cta {
+            background-image: url('img/notebook.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .cta::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 61, 92, 0.8);
+            z-index: 1;
+        }
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
         footer {
-            background-color: #333;
+            background-color: #1a3d5c;
             color: white;
             text-align: center;
             padding: 20px;
@@ -98,103 +145,100 @@
             margin: 0 10px;
         }
     </style>
-
 </head>
 <body>
     <nav class="navbar">
-        <a href="page2.html#about">About</a>
-        <a href="page2.html#projects">Projects</a>
-        <a href="page2.html#services">Services</a>
+        <div class="menu">MENU</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+        </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Don't Wait</h1>
-            <h2>Improve Your Business Today!</h2>
+            <h1>DON'T WAIT<br>IMPROVE<br>YOUR BUSINESS<br>TODAY!</h1>
             <p>Get your hands on Biz Optima</p>
-            <button class="cta-button">Sign Up for Free!</button>
+            <button class="cta-button">SIGN UP FOR FREE!</button>
         </div>
     </section>
 
     <section class="features">
-        <h2>Amazing Features</h2>
         <div class="feature-container">
             <div class="feature-item">
-                <h3>Feature 1</h3>
-                <p>Description of feature 1</p>
+                <h3>AMAZING FEATURE #1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
             <div class="feature-item">
-                <h3>Feature 2</h3>
-                <p>Description of feature 2</p>
+                <h3>AMAZING FEATURE #2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
             <div class="feature-item">
-                <h3>Feature 3</h3>
-                <p>Description of feature 3</p>
+                <h3>AMAZING FEATURE #3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
         </div>
     </section>
 
     <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <blockquote>"I couldn't have asked for more than this. Biz Optima is the next killer app."</blockquote>
-        - John Doe, CEO & Founder, Biz Optima
+        <h2>"I COULDN'T HAVE ASKED FOR MORE THAN THIS. BIZ OPTIMA IS THE NEXT KILLER APP."</h2>
+        <p>John Doe, CEO & Founder, Biz Optima</p>
     </section>
 
     <section class="pricing">
-        <h2>Pricing Plans</h2>
-        <div class="pricing-container">
-            <div class="plan">
-                <h3>Basic Plan</h3>
-                <p>$29.99/month</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                </ul>
-                <button class="cta-button">Buy Now</button>
-            </div>
-            <div class="plan">
-                <h3>Standard Plan</h3>
-                <p>$39.99/month</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-                <button class="cta-button">Buy Now</button>
-            </div>
-            <div class="plan">
-                <h3>Premium Plan</h3>
-                <p>$49.99/month</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                    <li>Feature 5</li>
-                </ul>
-                <button class="cta-button">Buy Now</button>
+        <div class="pricing-content">
+            <h2>PRICES</h2>
+            <div class="pricing-container">
+                <div class="plan">
+                    <h3>BASIC PLAN</h3>
+                    <p>Plan Amazing feature #1</p>
+                    <p>Plan Amazing feature #2</p>
+                    <p>Plan Amazing feature #3</p>
+                    <p>Plan Amazing feature #4</p>
+                    <h4>$29.99<br>Monthly</h4>
+                    <button class="cta-button">BUY NOW</button>
+                </div>
+                <div class="plan">
+                    <h3>STANDART PLAN</h3>
+                    <p>Plan Amazing feature #1</p>
+                    <p>Plan Amazing feature #2</p>
+                    <p>Plan Amazing feature #3</p>
+                    <p>Plan Amazing feature #4</p>
+                    <h4>$39.99<br>Monthly</h4>
+                    <button class="cta-button">BUY NOW</button>
+                </div>
+                <div class="plan">
+                    <h3>CORPORATE PLAN</h3>
+                    <p>Plan Amazing feature #1</p>
+                    <p>Plan Amazing feature #2</p>
+                    <p>Plan Amazing feature #3</p>
+                    <p>Plan Amazing feature #4</p>
+                    <h4>$49.99<br>Monthly</h4>
+                    <button class="cta-button">BUY NOW</button>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <h2>Try the Best App in the Market</h2>
-        <p>Tell more why your software is amazing and why users need to sign up</p>
-        <button class="cta-button">Try It For Free</button>
+        <div class="cta-content">
+            <h2>TRY THE BEST APP IN THE MARKET</h2>
+            <p>Tell more why your software is amazing and why users need to sign up</p>
+            <button class="cta-button">TRY IT FOR FREE</button>
+        </div>
     </section>
 
     <footer>
-        <div class="social-icons">
-            <img src="img/facebook.png">
-            <img src="img/twitter.png">
-            <img src="img/instagram.png">
-            <img src="img/youtube.png">
-            <img src="img/tiktok.png">
-        </div>
-        <p>Biz Optima</p>
+        <p>BIZ OPTIMA</p>
         <p>224 Grant Ave, Redondo Beach, CA, 90278 310.555.1212 Ext. 3 for Business Needs</p>
+        <div class="social-icons">
+            <img src="img/facebook.png" alt="Facebook">
+            <img src="img/twitter.png" alt="Twitter">
+            <img src="img/instagram.png" alt="Instagram">
+            <img src="img/youtube.png" alt="YouTube">
+            <img src="img/tiktok.png" alt="TikTok">
+        </div>
     </footer>
 </body>
 </html>
