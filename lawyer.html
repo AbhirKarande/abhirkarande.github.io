@@ -37,15 +37,28 @@
             padding: 20px;
             border-radius: 10px;
         }
-        .features, .testimonials, .pricing {
+        .features, .pricing {
             padding: 50px 20px;
             text-align: center;
         }
+        .feature-container, .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
         .feature-item, .plan {
-            margin: 20px;
+            flex: 1;
+            margin: 10px;
             padding: 20px;
             background-color: #f8f8f8;
             border-radius: 5px;
+            min-width: 200px;
+            max-width: 300px;
+        }
+        .testimonials {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f0f0f0;
         }
         .cta {
             background-color: #4CAF50;
@@ -95,17 +108,19 @@
 
     <section class="features">
         <h2>Amazing Features</h2>
-        <div class="feature-item">
-            <h3>Feature 1</h3>
-            <p>Description of feature 1</p>
-        </div>
-        <div class="feature-item">
-            <h3>Feature 2</h3>
-            <p>Description of feature 2</p>
-        </div>
-        <div class="feature-item">
-            <h3>Feature 3</h3>
-            <p>Description of feature 3</p>
+        <div class="feature-container">
+            <div class="feature-item">
+                <h3>Feature 1</h3>
+                <p>Description of feature 1</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 2</h3>
+                <p>Description of feature 2</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 3</h3>
+                <p>Description of feature 3</p>
+            </div>
         </div>
     </section>
 
@@ -117,37 +132,41 @@
 
     <section class="pricing">
         <h2>Pricing Plans</h2>
-        <div class="plan">
-            <h3>Basic Plan</h3>
-            <p>$29.99/month</p>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-            <button class="cta-button">Buy Now</button>
+        <div class="pricing-container">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>$29.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button class="cta-button">Buy Now</button>
+            </div>
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <p>$39.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                </ul>
+                <button class="cta-button">Buy Now</button>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>$49.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                </ul>
+                <button class="cta-button">Buy Now</button>
+            </div>
         </div>
-        <div class="plan">
-            <h3>Basic Plan</h3>
-            <p>$39.99/month</p>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-            <button class="cta-button">Buy Now</button>
-        </div>
-        <div class="plan">
-            <h3>Basic Plan</h3>
-            <p>$49.99/month</p>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-            <button class="cta-button">Buy Now</button>
-        </div>
-        <!-- Add more pricing plans as needed -->
     </section>
 
     <section class="cta">
