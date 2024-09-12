@@ -1,58 +1,60 @@
-.plan h3, .plan p, .plan h4, .plan button {
-    text-align: center;
-}
-.plan button {
-    display: block;
-    margin: 0 auto;
-}
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    width: 1600px;
+    overflow-x: auto;
 }
+
 .navbar {
     background-color: white;
-    overflow: hidden;
     padding: 20px;
+    width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar .menu {
     font-weight: bold;
 }
+
 .navbar a {
     color: #333;
     text-decoration: none;
     padding: 0 15px;
 }
+
 .lawyer {
     background-image: url('img/lawyer.jpg');
     background-size: 1600px auto;
     background-position: 0 -50px;
-    background-attachment: fixed;
     height: 600px;
-    width: 1600px auto;
+    width: 1600px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 10%;
+    padding-left: 160px;
 }
+
 .lawyer-content {
     background-color: #1a3d5c;
     padding: 40px;
     color: white;
-    max-width: 400px;
+    width: 400px;
 }
+
 .lawyer-content h1 {
     font-size: 2.5em;
     margin: 0;
 }
+
 .lawyer-content p {
     color: #ffd700;
     margin-bottom: 20px;
 }
+
 .cta-button {
     background-color: #ffd700;
     border: none;
@@ -65,34 +67,41 @@ body, html {
     font-weight: bold;
     cursor: pointer;
 }
+
 .features {
-    padding: 50px 10%;
+    padding: 50px 160px;
     background-color: white;
+    width: 1280px;
 }
+
 .feature-container {
     display: flex;
     justify-content: space-between;
 }
+
 .feature-item {
-    flex: 1;
+    width: 373px;
     margin: 0 20px;
 }
+
 .testimonials {
     background-color: #f8f8f8;
-    padding: 50px 10%;
+    padding: 50px 160px;
     text-align: center;
+    width: 1280px;
 }
+
 .pricing {
     background-image: url('img/glasses.png');
-    background-attachment: fixed;
     background-size: 1600px auto;
     background-position: center;
-    width: 1600px auto;
+    width: 1600px;
     height: 500px;
     color: white;
-    padding: 50px 10%;
+    padding: 50px 160px;
     position: relative;
 }
+
 .pricing::before {
     content: "";
     position: absolute;
@@ -103,23 +112,28 @@ body, html {
     background: rgba(229, 233, 236, 0.8);
     z-index: 1;
 }
+
 .pricing-content {
     position: relative;
     z-index: 2;
+    width: 1280px;
 }
+
 .pricing-container {
     display: flex;
     justify-content: space-between;
 }
+
 .plan {
     background-color: white;
     color: #333;
     padding: 20px;
     margin: 10px;
-    flex: 1;
+    width: 400px;
     position: relative;
     overflow: hidden;
 }
+
 .plan::before {
     content: "";
     position: absolute;
@@ -134,18 +148,28 @@ body, html {
     opacity: 0.5;
     z-index: 0;
 }
+
+.plan h3, .plan p, .plan h4, .plan button {
+    text-align: center;
+}
+
+.plan button {
+    display: block;
+    margin: 0 auto;
+}
+
 .cta {
     background-image: url('img/notebook.jpg');
-    background-attachment: fixed;
     background-size: 1600px auto;
     background-position: center;
-    width: 1600px auto;
+    width: 1600px;
     height: 200px;
     color: white;
-    padding: 50px 10%;
+    padding: 50px 160px;
     text-align: center;
     position: relative;
 }
+
 .cta::before {
     content: "";
     position: absolute;
@@ -156,16 +180,21 @@ body, html {
     background: rgba(26, 61, 92, 0.8);
     z-index: 1;
 }
+
 .cta-content {
     position: relative;
     z-index: 2;
+    width: 1280px;
 }
+
 footer {
     background-color: #0d1f30;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 1560px;
 }
+
 .social-icons img {
     width: 30px;
     margin: 0 10px;
