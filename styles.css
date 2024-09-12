@@ -31,6 +31,7 @@ body, html {
     background-image: url('img/lawyer.jpg');
     background-size: 1600px auto;
     background-position: 0 -50px;
+    background-attachment: fixed;
     height: 100vh;
     width: 1600px auto;
     display: flex;
@@ -83,6 +84,7 @@ body, html {
 }
 .pricing {
     background-image: url('img/glasses.png');
+    background-attachment: fixed;
     background-size: 1600px auto;
     background-position: center;
     width: 1600px auto;
@@ -133,6 +135,7 @@ body, html {
 }
 .cta {
     background-image: url('img/notebook.jpg');
+    background-attachment: fixed;
     background-size: 1600px auto;
     background-position: center;
     width: 1600px auto;
