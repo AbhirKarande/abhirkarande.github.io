@@ -27,7 +27,7 @@ body, html {
     text-decoration: none;
     padding: 0 15px;
 }
-.hero {
+.lawyer {
     background-image: url('img/lawyer.jpg');
     background-size: cover;
     background-position: center;
@@ -37,17 +37,17 @@ body, html {
     justify-content: flex-start;
     padding-left: 10%;
 }
-.hero-content {
+.lawyer-content {
     background-color: #1a3d5c;
     padding: 40px;
     color: white;
     max-width: 400px;
 }
-.hero-content h1 {
+.lawyer-content h1 {
     font-size: 2.5em;
     margin: 0;
 }
-.hero-content p {
+.lawyer-content p {
     color: #ffd700;
     margin-bottom: 20px;
 }
