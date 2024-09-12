@@ -29,9 +29,10 @@ body, html {
 }
 .lawyer {
     background-image: url('img/lawyer.jpg');
-    background-size: cover;
+    background-size: 1600px auto;
     background-position: 0 -50px;
     height: 100vh;
+    width: 1600px auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -82,8 +83,9 @@ body, html {
 }
 .pricing {
     background-image: url('img/glasses.png');
-    background-size: cover;
+    background-size: 1600px auto;
     background-position: center;
+    width: 1600px auto;
     color: white;
     padding: 50px 10%;
     position: relative;
@@ -131,8 +133,9 @@ body, html {
 }
 .cta {
     background-image: url('img/notebook.jpg');
-    background-size: cover;
+    background-size: 1600px auto;
     background-position: center;
+    width: 1600px auto;
     color: white;
     padding: 50px 10%;
     text-align: center;
