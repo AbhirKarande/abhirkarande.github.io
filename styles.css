@@ -30,7 +30,7 @@ body, html {
 .lawyer {
     background-image: url('img/lawyer.jpg');
     background-size: cover;
-    background-position: center 10%;
+    background-position: 0 -50px;
     height: 100vh;
     display: flex;
     align-items: center;
