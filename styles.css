@@ -35,7 +35,6 @@ body, html {
     height: 753px;
     width: 1600px auto;
     align-items: center;
-    padding-left: 10%;
 }
 .lawyer-content {
     background-color: #1a3d5c;
@@ -83,13 +82,11 @@ body, html {
 .pricing {
     background-image: url('img/glasses.png');
     background-attachment: fixed;
-    background-size: 1600px auto;
+    background-size: 1600px;
     background-position: center;
-    width: 1600px auto;
+    width: 1600px;
     height: 753px;
     color: white;
-    padding: 50px 10%;
-    position: relative;
 }
 .pricing::before {
     content: "";
@@ -135,14 +132,12 @@ body, html {
 .cta {
     background-image: url('img/notebook.jpg');
     background-attachment: fixed;
-    background-size: 1600px auto;
+    background-size: 1600px;
     background-position: center;
-    width: 1600px auto;
+    width: 1600px;
     height: 753px;
     color: white;
-    padding: 50px 10%;
     text-align: center;
-    position: relative;
 }
 .cta::before {
     content: "";
