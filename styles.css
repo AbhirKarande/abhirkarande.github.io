@@ -15,7 +15,6 @@ body, html {
     background-color: white;
     overflow: hidden;
     padding: 20px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,9 +33,7 @@ body, html {
     background-attachment: fixed;
     height: 753px;
     width: 1600px auto;
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
     padding-left: 10%;
 }
 .lawyer-content {
@@ -70,11 +67,9 @@ body, html {
     background-color: white;
 }
 .feature-container {
-    display: flex;
     justify-content: space-between;
 }
 .feature-item {
-    flex: 1;
     margin: 0 20px;
 }
 .testimonials {
@@ -108,7 +103,6 @@ body, html {
     z-index: 2;
 }
 .pricing-container {
-    display: flex;
     justify-content: space-between;
 }
 .plan {
@@ -116,7 +110,6 @@ body, html {
     color: #333;
     padding: 20px;
     margin: 10px;
-    flex: 1;
     position: relative;
     overflow: hidden;
 }
