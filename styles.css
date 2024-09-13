@@ -3,14 +3,14 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    width: 1400px;
+    width: 1600px;
     overflow-x: auto;
 }
 
 .navbar {
     background-color: white;
     padding: 20px;
-    width: 1400px;
+    width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,10 +28,10 @@ body, html {
 
 .lawyer {
     background-image: url('img/lawyer.jpg');
-    background-size: 1400px auto;
+    background-size: 1600px auto;
     background-position: 0 -50px;
     height: 600px;
-    width: 1400px;
+    width: 1600px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -93,9 +93,9 @@ body, html {
 
 .pricing {
     background-image: url('img/glasses.png');
-    background-size: 1400px auto;
+    background-size: 1600px auto;
     background-position: center;
-    width: 1400px;
+    width: 1600px;
     height: 500px;
     color: white;
     padding: 50px 160px;
@@ -160,9 +160,9 @@ body, html {
 
 .cta {
     background-image: url('img/notebook.jpg');
-    background-size: 1400px auto;
+    background-size: 1600px auto;
     background-position: center;
-    width: 1400px;
+    width: 1600px;
     height: 200px;
     color: white;
     padding: 50px 160px;
@@ -196,6 +196,6 @@ footer {
 }
 
 .social-icons img {
-    width: 1400px;
+    width: 1600px;
     margin: 0 10px;
 }
