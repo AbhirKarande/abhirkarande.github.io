@@ -119,9 +119,16 @@ body, html {
     width: 1280px;
 }
 
-.pricing-content h2 h3{
+.pricing-content h2{
     margin: 0;
     text-align: center;
+    color:#0d1f30
+}
+
+.pricing-content h3{
+    margin: 0;
+    text-align: center;
+    color:#61686f
 }
 
 .pricing-container {
