@@ -54,7 +54,7 @@ body, html {
     margin-bottom: 20px;
 }
 
-.cta-button {
+.action-button {
     background-color: #ffd700;
     border: none;
     color: #1a3d5c;
@@ -157,7 +157,7 @@ body, html {
     margin: 0 auto;
 }
 
-.cta {
+.action {
     background-image: url('img/notebook.jpg');
     background-size: 1600px auto;
     background-position: center;
@@ -169,7 +169,7 @@ body, html {
     position: relative;
 }
 
-.cta::before {
+.action::before {
     content: "";
     position: absolute;
     top: 0;
@@ -180,7 +180,7 @@ body, html {
     z-index: 1;
 }
 
-.cta-content {
+.action-content {
     position: relative;
     z-index: 2;
     width: 1280px;
