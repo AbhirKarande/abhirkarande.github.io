@@ -29,7 +29,6 @@ body, html {
 .lawyer {
     background-image: url('img/lawyer.jpg');
     background-size: 1600px auto;
-    background-position: 0 -50px;
     height: 600px;
     width: 1600px;
     display: flex;
