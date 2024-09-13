@@ -3,11 +3,11 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    width: 1450px;
+    width: 1490px;
     overflow-x: auto;
 }
 
-.navbar {
+.top-noodle {
     background-color: white;
     padding: 20px;
     width: 1400px;
@@ -16,21 +16,25 @@ body, html {
     align-items: center;
 }
 
-.navbar .menu {
+.top-noodle .menu {
     font-weight: bold;
 }
 
-.navbar a {
+.top-noodle a {
     color: #333;
     text-decoration: none;
     padding: 0 15px;
 }
 
+.grand-enchilada {
+    width: 1490px;
+}
+
 .lawyer {
     background-image: url('img/lawyer.jpg');
-    background-size: 1600px auto;
+    background-size: 1490px auto;
     height: 600px;
-    width: 1450px;
+    width: 1490px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -67,41 +71,39 @@ body, html {
     cursor: pointer;
 }
 
-.features {
+.disco-flamingo-list {
     padding: 50px 160px;
     background-color: white;
     width: 1280px;
-}
-
-.feature-container {
     display: flex;
     justify-content: space-between;
 }
 
-.feature-item {
+.disco-flamingo-item {
     width: 373px;
     margin: 0 20px;
 }
 
-.quote {
+.wise-pineapple {
     background-color: #f8f8f8;
     padding: 50px 160px;
     text-align: center;
     width: 1280px;
+    margin: 0;
 }
 
-.pricing {
+.ninja-unicorn-zone {
     background-image: url('img/glasses.png');
-    background-size: 1600px auto;
+    background-size: 1490px auto;
     background-position: center;
-    width: 1450px;
+    width: 1490px;
     height: 500px;
     color: white;
     padding: 50px 160px;
     position: relative;
 }
 
-.pricing::before {
+.ninja-unicorn-zone::before {
     content: "";
     position: absolute;
     top: 0;
@@ -112,30 +114,30 @@ body, html {
     z-index: 1;
 }
 
-.pricing-content {
+.ninja-unicorn-content {
     position: relative;
     z-index: 2;
     width: 1280px;
 }
 
-.pricing-content h2{
+.ninja-unicorn-content h2 {
     margin: 0;
     text-align: center;
-    color:#0d1f30
+    color: #0d1f30;
 }
 
-.pricing-content h3{
+.ninja-unicorn-content h3 {
     margin: 0;
     text-align: center;
-    color:#61686f
+    color: #61686f;
 }
 
-.pricing-container {
+.ninja-unicorn-list {
     display: flex;
     justify-content: space-between;
 }
 
-.pricing-card {
+.ninja-unicorn-item {
     background-color: white;
     color: #333;
     padding: 20px;
@@ -143,28 +145,51 @@ body, html {
     width: 400px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
 }
 
-.pricing-card::before {
+.ninja-unicorn-item::before {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background:
         linear-gradient(to right, #2a2929 1px, transparent 1px),
         linear-gradient(to bottom, #383838 1px, transparent 1px);
     background-size: 20px 20px;
-    opacity: 0.5;
+    opacity: 0.1;
     z-index: 0;
 }
 
-.pricing-card h3, .pricing-card p, .pricing-card h4, .pricing-card button {
+.ninja-unicorn-item h3, .ninja-unicorn-item p, .ninja-unicorn-item button {
     text-align: center;
 }
 
+.ninga-unicorn-item .features{
+    text-align: center;
+    align-self: stretch;
+    margin-bottom: 20px;
+}
+.ninja-unicorn-item h4 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.ninja-unicorn-item .action-button {
+    margin-top: auto;
+}
 
 .action {
     background-image: url('img/notebook.jpg');
-    background-size: 1600px auto;
+    background-size: 1490px auto;
     background-position: center;
-    width: 1450px;
+    width: 1490px;
     height: 200px;
     color: white;
     padding: 50px 160px;
@@ -189,7 +214,7 @@ body, html {
     width: 1280px;
 }
 
-footer {
+.bottom-burrito {
     background-color: #0d1f30;
     width: 1560px;
     color: white;
@@ -197,7 +222,7 @@ footer {
     padding: 20px;
 }
 
-.social-icons img {
+.disco-ball-icons img {
     width: 30px;
     margin: 0 10px;
 }
