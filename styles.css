@@ -157,7 +157,6 @@ body, html {
         linear-gradient(to bottom, #383838 1px, transparent 1px);
     background-size: 20px 20px;
     opacity: 0.5;
-    
     z-index: 0;
 }
 
