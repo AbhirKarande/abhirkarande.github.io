@@ -84,7 +84,7 @@ body, html {
     margin: 0 20px;
 }
 
-.testimonials {
+.quote {
     background-color: #f8f8f8;
     padding: 50px 160px;
     text-align: center;
@@ -134,7 +134,7 @@ body, html {
     overflow: hidden;
 }
 
-.plan::before {
+.pricing-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -149,14 +149,10 @@ body, html {
     z-index: 0;
 }
 
-.plan h3, .plan p, .plan h4, .plan button {
+.pricing-card h3, .pricing-card p, .pricing-card h4, .pricing-card button {
     text-align: center;
 }
 
-.plan button {
-    display: block;
-    margin: 0 auto;
-}
 
 .action {
     background-image: url('img/notebook.jpg');
