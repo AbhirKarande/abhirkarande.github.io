@@ -119,6 +119,11 @@ body, html {
     width: 1280px;
 }
 
+.pricing-content h2 {
+    margin: 0;
+    text-align: center;
+}
+
 .pricing-container {
     display: flex;
     justify-content: space-between;
@@ -135,7 +140,6 @@ body, html {
 }
 
 .pricing-card::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -185,10 +189,10 @@ body, html {
 
 footer {
     background-color: #0d1f30;
+    width: 1560px;
     color: white;
     text-align: center;
     padding: 20px;
-    width: 1560px;
 }
 
 .social-icons img {
