@@ -151,6 +151,11 @@
             width: 400px;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
         }
 
         .ninja-unicorn-item::before {
@@ -164,12 +169,26 @@
                 linear-gradient(to right, #2a2929 1px, transparent 1px),
                 linear-gradient(to bottom, #383838 1px, transparent 1px);
             background-size: 20px 20px;
-            opacity: 0.5;
+            opacity: 0.1;
             z-index: 0;
         }
 
-        .ninja-unicorn-item h3, .ninja-unicorn-item p, .ninja-unicorn-item h4, .ninja-unicorn-item button {
+        .ninja-unicorn-item h3, .ninja-unicorn-item p, .ninja-unicorn-item button {
             text-align: center;
+        }
+
+        .ninga-unicorn-item .features{
+            text-align: center;
+            align-self: stretch;
+            margin-bottom: 20px;
+        }
+        .ninja-unicorn-item h4 {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .ninja-unicorn-item .action-button {
+            margin-top: auto;
         }
 
         .action {
@@ -265,35 +284,41 @@
                 <div class="ninja-unicorn-list">
                     <div class="ninja-unicorn-item">
                         <h3>BASIC PLAN</h3>
-                        <p>Plan Amazing feature #1</p>
-                        <p>Plan Amazing feature #2</p>
-                        <p>Plan Amazing feature #3</p>
-                        <p>Plan Amazing feature #4</p>
+                        <div class="features">
+                            <p>Plan Amazing feature #1</p>
+                            <p>Plan Amazing feature #2</p>
+                            <p>Plan Amazing feature #3</p>
+                            <p>Plan Amazing feature #4</p>
+                        </div>
                         <h4>$29.99<br>Monthly</h4>
                         <button class="action-button">BUY NOW</button>
                     </div>
                     <div class="ninja-unicorn-item">
                         <h3>STANDARD PLAN</h3>
-                        <p>Plan Amazing feature #1</p>
-                        <p>Plan Amazing feature #2</p>
-                        <p>Plan Amazing feature #3</p>
-                        <p>Plan Amazing feature #4</p>
+                        <div class="features">
+                            <p>Plan Amazing feature #1</p>
+                            <p>Plan Amazing feature #2</p>
+                            <p>Plan Amazing feature #3</p>
+                            <p>Plan Amazing feature #4</p>
+                        </div>
                         <h4>$39.99<br>Monthly</h4>
                         <button class="action-button">BUY NOW</button>
                     </div>
                     <div class="ninja-unicorn-item">
                         <h3>CORPORATE PLAN</h3>
-                        <p>Plan Amazing feature #1</p>
-                        <p>Plan Amazing feature #2</p>
-                        <p>Plan Amazing feature #3</p>
-                        <p>Plan Amazing feature #4</p>
+                        <div class="features">
+                            <p>Plan Amazing feature #1</p>
+                            <p>Plan Amazing feature #2</p>
+                            <p>Plan Amazing feature #3</p>
+                            <p>Plan Amazing feature #4</p>
+                        </div>
                         <h4>$49.99<br>Monthly</h4>
                         <button class="action-button">BUY NOW</button>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <div class="action">
             <div class="action-content">
                 <h2>TRY THE BEST APP IN THE MARKET</h2>
@@ -304,7 +329,7 @@
     </main>
 
     <footer class="bottom-burrito">
-        <h2>BIZ OPTIMA</h2>
+        <h3>BIZ OPTIMA</h3>
         <p>224 Grant Ave, Redondo Beach, CA, 90278 310.555.1212 Ext. 3 for Business Needs</p>
         <div class="disco-ball-icons">
             <img src="img/facebook.png" alt="Facebook">
