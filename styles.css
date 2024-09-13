@@ -30,7 +30,7 @@ body, html {
     background-image: url('img/lawyer.jpg');
     background-size: 1600px auto;
     height: 600px;
-    width: 1500px;
+    width: 1450px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -94,7 +94,7 @@ body, html {
     background-image: url('img/glasses.png');
     background-size: 1600px auto;
     background-position: center;
-    width: 1600px;
+    width: 1450px;
     height: 500px;
     color: white;
     padding: 50px 160px;
@@ -164,7 +164,7 @@ body, html {
     background-image: url('img/notebook.jpg');
     background-size: 1600px auto;
     background-position: center;
-    width: 1600px;
+    width: 1450px;
     height: 200px;
     color: white;
     padding: 50px 160px;
