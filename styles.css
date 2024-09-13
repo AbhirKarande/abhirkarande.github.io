@@ -153,10 +153,11 @@ body, html {
     right: 0;
     bottom: 0;
     background:
-        linear-gradient(to right, #e5e5e5 1px, transparent 1px),
-        linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+        linear-gradient(to right, #2a2929 1px, transparent 1px),
+        linear-gradient(to bottom, #383838 1px, transparent 1px);
     background-size: 20px 20px;
     opacity: 0.5;
+    
     z-index: 0;
 }
 
