@@ -3,102 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <title>Biz Optima - Improve Your Business Today</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            width: 1450px;
+            overflow-x: auto;
+        }
+
+        .top-noodle {
+            background-color: white;
+            padding: 20px;
+            width: 1400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-noodle .menu {
+            font-weight: bold;
+        }
+
+        .top-noodle a {
+            color: #333;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .grand-enchilada {
+            width: 1450px;
+        }
+
+        .lawyer {
+            background-image: url('img/lawyer.jpg');
+            background-size: 1450px auto;
+            height: 600px;
+            width: 1450px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 160px;
+        }
+
+        .lawyer-content {
+            background-color: #1a3d5c;
+            padding: 40px;
+            color: white;
+            width: 400px;
+        }
+
+        .lawyer-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .lawyer-content p {
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .action-button {
+            background-color: #ffd700;
+            border: none;
+            color: #1a3d5c;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .disco-flamingo-list {
+            padding: 50px 160px;
+            background-color: white;
+            width: 1280px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .disco-flamingo-item {
+            width: 373px;
+            margin: 0 20px;
+        }
+
+        .wise-pineapple {
+            background-color: #f8f8f8;
+            padding: 50px 160px;
+            text-align: center;
+            width: 1280px;
+            margin: 0;
+        }
+
+        .ninja-unicorn-zone {
+            background-image: url('img/glasses.png');
+            background-size: 1450px auto;
+            background-position: center;
+            width: 1450px;
+            height: 500px;
+            color: white;
+            padding: 50px 160px;
+            position: relative;
+        }
+
+        .ninja-unicorn-zone::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(229, 233, 236, 0.8);
+            z-index: 1;
+        }
+
+        .ninja-unicorn-content {
+            position: relative;
+            z-index: 2;
+            width: 1280px;
+        }
+
+        .ninja-unicorn-content h2 {
+            margin: 0;
+            text-align: center;
+            color: #0d1f30;
+        }
+
+        .ninja-unicorn-content h3 {
+            margin: 0;
+            text-align: center;
+            color: #61686f;
+        }
+
+        .ninja-unicorn-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ninja-unicorn-item {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            margin: 10px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ninja-unicorn-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(to right, #2a2929 1px, transparent 1px),
+                linear-gradient(to bottom, #383838 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .ninja-unicorn-item h3, .ninja-unicorn-item p, .ninja-unicorn-item h4, .ninja-unicorn-item button {
+            text-align: center;
+        }
+
+        .action {
+            background-image: url('img/notebook.jpg');
+            background-size: 1450px auto;
+            background-position: center;
+            width: 1450px;
+            height: 200px;
+            color: white;
+            padding: 50px 160px;
+            text-align: center;
+            position: relative;
+        }
+
+        .action::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 61, 92, 0.8);
+            z-index: 1;
+        }
+
+        .action-content {
+            position: relative;
+            z-index: 2;
+            width: 1280px;
+        }
+
+        .bottom-burrito {
+            background-color: #0d1f30;
+            width: 1560px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .disco-ball-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
+    <header class="top-noodle">
         <div class="menu">MENU</div>
-        <div>
+        <nav>
             <a href="page2.html">About</a>
             <a href="page2.html">Projects</a>
             <a href="page2.html">Services</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="lawyer">
-        <div class="lawyer-content">
-            <p>DON'T WAIT</p>
-            <h3>IMPROVE</h3>
-            <h3>YOUR BUSINESS</h3>
-            <h3>TODAY!</h3>
-            <p>- Get your hands on Biz Optima -</p>
-            <form>
-                <input type="text" id="fname" name="fname"><br>
-            </form>
-            <button class="action-button">SIGN UP FOR FREE!</button>
+    <main class="grand-enchilada">
+        <div class="lawyer">
+            <div class="lawyer-content">
+                <p>DON'T WAIT</p>
+                <h1>IMPROVE YOUR BUSINESS TODAY!</h1>
+                <p>- Get your hands on Biz Optima -</p>
+                <form>
+                    <input type="text" id="fname" name="fname"><br>
+                </form>
+                <button class="action-button">SIGN UP FOR FREE!</button>
+            </div>
         </div>
-    </section>
 
-    <section class="features">
-        <div class="feature-container">
-            <div class="feature-item">
+        <div class="disco-flamingo-list">
+            <div class="disco-flamingo-item">
                 <h3>AMAZING FEATURE #1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
-            <div class="feature-item">
+            <div class="disco-flamingo-item">
                 <h3>AMAZING FEATURE #2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
-            <div class="feature-item">
+            <div class="disco-flamingo-item">
                 <h3>AMAZING FEATURE #3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
             </div>
         </div>
-    </section>
 
-    <section class="quote">
-        <h2>"I COULDN'T HAVE ASKED FOR MORE THAN THIS. BIZ OPTIMA IS THE NEXT KILLER APP."</h2>
-        <p>John Doe, CEO & Founder, Biz Optima</p>
-    </section>
+        <blockquote class="wise-pineapple">
+            <h2>"I COULDN'T HAVE ASKED FOR MORE THAN THIS. BIZ OPTIMA IS THE NEXT KILLER APP."</h2>
+            <p>John Doe, CEO & Founder, Biz Optima</p>
+        </blockquote>
 
-    <section class="pricing">
-        <div class="pricing-content">
-            <h2 class="pricing-content">PRICES</h2>
-            <h3 class="pricing-content">AFFORDABLE FOR EVERYONE</h3>
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <h3>BASIC PLAN</h3>
-                    <p>Plan Amazing feature #1</p>
-                    <p>Plan Amazing feature #2</p>
-                    <p>Plan Amazing feature #3</p>
-                    <p>Plan Amazing feature #4</p>
-                    <h4>$29.99<br>Monthly</h4>
-                    <button class="action-button">BUY NOW</button>
-                </div>
-                <div class="pricing-card">
-                    <h3>STANDARD PLAN</h3>
-                    <p>Plan Amazing feature #1</p>
-                    <p>Plan Amazing feature #2</p>
-                    <p>Plan Amazing feature #3</p>
-                    <p>Plan Amazing feature #4</p>
-                    <h4>$39.99<br>Monthly</h4>
-                    <button class="action-button">BUY NOW</button>
-                </div>
-                <div class="pricing-card">
-                    <h3>CORPORATE PLAN</h3>
-                    <p>Plan Amazing feature #1</p>
-                    <p>Plan Amazing feature #2</p>
-                    <p>Plan Amazing feature #3</p>
-                    <p>Plan Amazing feature #4</p>
-                    <h4>$49.99<br>Monthly</h4>
-                    <button class="action-button">BUY NOW</button>
+        <div class="ninja-unicorn-zone">
+            <div class="ninja-unicorn-content">
+                <h2>PRICES</h2>
+                <h3>AFFORDABLE FOR EVERYONE</h3>
+                <div class="ninja-unicorn-list">
+                    <div class="ninja-unicorn-item">
+                        <h3>BASIC PLAN</h3>
+                        <p>Plan Amazing feature #1</p>
+                        <p>Plan Amazing feature #2</p>
+                        <p>Plan Amazing feature #3</p>
+                        <p>Plan Amazing feature #4</p>
+                        <h4>$29.99<br>Monthly</h4>
+                        <button class="action-button">BUY NOW</button>
+                    </div>
+                    <div class="ninja-unicorn-item">
+                        <h3>STANDARD PLAN</h3>
+                        <p>Plan Amazing feature #1</p>
+                        <p>Plan Amazing feature #2</p>
+                        <p>Plan Amazing feature #3</p>
+                        <p>Plan Amazing feature #4</p>
+                        <h4>$39.99<br>Monthly</h4>
+                        <button class="action-button">BUY NOW</button>
+                    </div>
+                    <div class="ninja-unicorn-item">
+                        <h3>CORPORATE PLAN</h3>
+                        <p>Plan Amazing feature #1</p>
+                        <p>Plan Amazing feature #2</p>
+                        <p>Plan Amazing feature #3</p>
+                        <p>Plan Amazing feature #4</p>
+                        <h4>$49.99<br>Monthly</h4>
+                        <button class="action-button">BUY NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="action">
-        <div class="action-content">
-            <h2>TRY THE BEST APP IN THE MARKET</h2>
-            <p>tell more why your software is amazing and why users need to sign up</p>
-            <button class="action-button">TRY IT FOR FREE</button>
+        <div class="action">
+            <div class="action-content">
+                <h2>TRY THE BEST APP IN THE MARKET</h2>
+                <p>tell more why your software is amazing and why users need to sign up</p>
+                <button class="action-button">TRY IT FOR FREE</button>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <footer>
+    <footer class="bottom-burrito">
         <h2>BIZ OPTIMA</h2>
         <p>224 Grant Ave, Redondo Beach, CA, 90278 310.555.1212 Ext. 3 for Business Needs</p>
-        <div class="social-icons">
+        <div class="disco-ball-icons">
             <img src="img/facebook.png" alt="Facebook">
             <img src="img/x.png" alt="x">
             <img src="img/instagram.png" alt="Instagram">
