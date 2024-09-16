@@ -1,0 +1,228 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 1490px;
+    overflow-x: auto;
+}
+
+.top-noodle {
+    background-color: white;
+    padding: 20px;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-noodle .menu {
+    font-weight: bold;
+}
+
+.top-noodle a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.grand-enchilada {
+    width: 1490px;
+}
+
+.lawyer {
+    background-image: url('img/lawyer.jpg');
+    background-size: 1490px auto;
+    height: 600px;
+    width: 1490px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 160px;
+}
+
+.lawyer-content {
+    background-color: #1a3d5c;
+    padding: 40px;
+    color: white;
+    width: 400px;
+}
+
+.lawyer-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.lawyer-content p {
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-color: #ffd700;
+    border: none;
+    color: #1a3d5c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disco-flamingo-list {
+    padding: 50px 160px;
+    background-color: white;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disco-flamingo-item {
+    width: 373px;
+    margin: 0 20px;
+}
+
+.wise-pineapple {
+    background-color: #f8f8f8;
+    padding: 50px 160px;
+    text-align: center;
+    width: 1280px;
+    margin: 0;
+}
+
+.ninja-unicorn-zone {
+    background-image: url('img/glasses.png');
+    background-size: 1490px auto;
+    background-position: center;
+    width: 1490px;
+    height: 500px;
+    color: white;
+    padding: 50px 160px;
+    position: relative;
+}
+
+.ninja-unicorn-zone::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(229, 233, 236, 0.8);
+    z-index: 1;
+}
+
+.ninja-unicorn-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+}
+
+.ninja-unicorn-content h2 {
+    margin: 0;
+    text-align: center;
+    color: #0d1f30;
+}
+
+.ninja-unicorn-content h3 {
+    margin: 0;
+    text-align: center;
+    color: #61686f;
+}
+
+.ninja-unicorn-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ninja-unicorn-item {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.ninja-unicorn-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to right, #2a2929 1px, transparent 1px),
+        linear-gradient(to bottom, #383838 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.ninja-unicorn-item h3, .ninja-unicorn-item p, .ninja-unicorn-item button {
+    text-align: center;
+}
+
+.ninga-unicorn-item .features{
+    text-align: center;
+    align-self: stretch;
+    margin-bottom: 20px;
+}
+.ninja-unicorn-item h4 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.ninja-unicorn-item .action-button {
+    margin-top: auto;
+}
+
+.action {
+    background-image: url('img/notebook.jpg');
+    background-size: 1490px auto;
+    background-position: center;
+    width: 1490px;
+    height: 200px;
+    color: white;
+    padding: 50px 160px;
+    text-align: center;
+    position: relative;
+}
+
+.action::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 61, 92, 0.8);
+    z-index: 1;
+}
+
+.action-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+}
+
+.bottom-burrito {
+    background-color: #0d1f30;
+    width: 1560px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.disco-ball-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
